@@ -24,7 +24,7 @@ WIN_COMBINATIONS = [
   end
 
   def input_to_index
-    
+    @board.to_i - 1
   end
 
 end
