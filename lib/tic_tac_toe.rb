@@ -98,4 +98,12 @@ WIN_COMBINATIONS = [
     @board.none? {|i| (i == nil?) || (i == " ")}
   end
 
+  def draw?
+    if won? == false && full? == true
+      true
+    #else
+    #  false
+    end
+  end
+
 end
