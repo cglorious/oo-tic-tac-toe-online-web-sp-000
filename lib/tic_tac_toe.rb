@@ -72,7 +72,7 @@ WIN_COMBINATIONS = [
         board_index = input_to_index(gets.strip)
       end
     end
-    display_board(board)
+    display_board
   end
 
   def won?
