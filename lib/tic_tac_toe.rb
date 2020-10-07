@@ -13,7 +13,7 @@ WIN_COMBINATIONS = [
 
   def initialize(board)
     board = Array.new(9, " ")
-    @board = board 
+    #@board = board 
   end
 
 end
