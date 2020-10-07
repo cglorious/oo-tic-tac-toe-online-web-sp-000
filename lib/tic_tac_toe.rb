@@ -92,7 +92,10 @@ WIN_COMBINATIONS = [
     if array == []
       false
     end
-    #return array if true
+  end
+
+  def full?(board)
+    board.none? {|i| (i == nil?) || (i == " ")}
   end
 
 end
