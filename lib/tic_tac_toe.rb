@@ -132,6 +132,7 @@ WIN_COMBINATIONS = [
       puts "Congratulations #{winner}!"
     else
       puts "Cat's Game!"
+    end
   end
 
 end
