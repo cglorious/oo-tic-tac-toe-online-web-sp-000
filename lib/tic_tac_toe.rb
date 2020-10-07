@@ -61,6 +61,20 @@ WIN_COMBINATIONS = [
     turn_count % 2 == 0 ? "X" : "O"
   end
 
+  def turn(board)
+    puts "Please enter 1-9:"
+    board_index = input_to_index(gets.strip)
+    if valid_move?(board, board_index) == true
+      board[board_index] = current_player(board)
+    else
+      until valid_move?(board, board_index) == true
+        puts "Please enter 1-9:"
+        board_index = input_to_index(gets.strip)
+      end
+    end
+    display_board(board)
+  end
+
   def won?
     array = WIN_COMBINATIONS.select do |combo|
                 win_index_1 = combo[0]
