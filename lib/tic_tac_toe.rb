@@ -92,6 +92,7 @@ WIN_COMBINATIONS = [
     if array == []
       false
     end
+    array
   end
 
 end
