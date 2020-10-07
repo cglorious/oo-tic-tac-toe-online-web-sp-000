@@ -44,12 +44,7 @@ WIN_COMBINATIONS = [
   if position_taken?(board, move) == true
     false
   else position_taken?(board, move) == false
-    if move.between?(0,8)
-      true
-    else
-      false
-    end
-  end
+    return true if move.between?(0,8)
   end
 
 end
