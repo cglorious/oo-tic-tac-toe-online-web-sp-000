@@ -102,4 +102,14 @@ WIN_COMBINATIONS = [
     return true if won? == false && full? == true
   end
 
+  def over?(board)
+    if won?(board)
+      true
+    elsif draw?(board) == true || full?(board) == true
+      true
+    else draw?(board) == false
+      false
+    end
+  end
+
 end
