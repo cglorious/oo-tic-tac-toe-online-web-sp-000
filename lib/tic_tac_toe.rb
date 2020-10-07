@@ -94,8 +94,8 @@ WIN_COMBINATIONS = [
     end
   end
 
-  def full?(board)
-    board.none? {|i| (i == nil?) || (i == " ")}
+  def full?
+    @board.none? {|i| (i == nil?) || (i == " ")}
   end
 
 end
