@@ -61,7 +61,7 @@ WIN_COMBINATIONS = [
     turn_count(@board) % 2 == 0 ? "X" : "O"
   end
 
-  def won?(board)
+  def won?
     array = WIN_COMBINATIONS.select do |combo|
                 win_index_1 = combo[0]
                 win_index_2 = combo[1]
