@@ -44,10 +44,6 @@ WIN_COMBINATIONS = [
       false
     else position_taken?(move) == false
       return true if move.between?(0,8)
-      #  true
-      #else
-      #  false
-      #end
     end
   end
 
