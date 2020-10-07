@@ -29,7 +29,7 @@ WIN_COMBINATIONS = [
 
   def move 
   end
-    
+
   end
 
 end
