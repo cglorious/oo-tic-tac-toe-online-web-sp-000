@@ -92,7 +92,7 @@ WIN_COMBINATIONS = [
     if array == []
       false
     end
-    return array if true
+    #return array if true
   end
 
 end
