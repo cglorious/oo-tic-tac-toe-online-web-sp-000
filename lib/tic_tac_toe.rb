@@ -27,7 +27,8 @@ WIN_COMBINATIONS = [
     input.to_i - 1
   end
 
-  def move 
+  def move(@board, player_index, character)
+    @board[player_index] = character 
   end
 
   end
