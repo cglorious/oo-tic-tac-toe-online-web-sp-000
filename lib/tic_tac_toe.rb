@@ -65,7 +65,7 @@ WIN_COMBINATIONS = [
     puts "Please enter 1-9:"
     board_index = input_to_index(gets.strip)
     if valid_move?(board_index) == true
-      @board[board_index] = current_player(board)
+      @board[board_index] = current_player
     else
       until valid_move?(board_index) == true
         puts "Please enter 1-9:"
