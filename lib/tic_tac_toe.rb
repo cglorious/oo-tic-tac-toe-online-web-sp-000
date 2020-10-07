@@ -31,6 +31,5 @@ WIN_COMBINATIONS = [
     @board[index] = character 
   end
 
-  end
 
 end
