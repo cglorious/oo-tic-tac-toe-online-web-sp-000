@@ -39,4 +39,17 @@ WIN_COMBINATIONS = [
     end
   end
 
+  def valid_move?(board, move)
+
+  if position_taken?(board, move) == true
+    false
+  else position_taken?(board, move) == false
+    if move.between?(0,8)
+      true
+    else
+      false
+    end
+  end
+  end
+
 end
