@@ -11,9 +11,8 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-  def initialize(board)
-    board = Array.new(9, " ")
-    @board = board
+  def initialize(board = nil)
+    @board = board || Array.new(9, " ")
   end
 
   def display_board
