@@ -27,4 +27,9 @@ WIN_COMBINATIONS = [
     input.to_i - 1
   end
 
+  def move 
+  end
+    
+  end
+
 end
