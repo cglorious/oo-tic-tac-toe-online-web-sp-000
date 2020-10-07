@@ -112,4 +112,15 @@ WIN_COMBINATIONS = [
     end
   end
 
+  def winner
+    if won?
+      winning_array = won?
+      winning_array.all? do |i|
+        return @board[i]
+      end
+    else won? == false
+      return nil
+    end
+  end
+
 end
